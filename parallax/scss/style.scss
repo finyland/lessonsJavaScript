@@ -1,0 +1,84 @@
+* {
+	font-family: sans-serif;
+}
+
+.wrapper {
+	background: #000000;
+}
+.page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.parallax {
+	position: relative;
+	height: 100%;
+		&__montain {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			&_1 {
+				background: url(../img/m_1.png) 0 0 / cover no-repeat;
+			}
+
+			&_2 {
+				z-index: 1;
+				background: url(../img/m_2.png) bottom right / 45% no-repeat;
+			}
+
+			&_3 {
+				z-index: 1;
+				background: url(../img/m_3.png) bottom left / 100% no-repeat;
+			}
+		}
+
+		&__fog {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			background: url(../img/fog_1.png) bottom / 100% no-repeat;
+		}
+}
+.content {
+	position: relative;
+		&__body {
+			max-width: 80%;
+			margin: 0px auto;
+		}
+
+		&__header {
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			padding: 0px 20px;
+		}
+
+		&__tittle {
+			font-size: 120px;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		&__subtittle {
+			font-size: 60px;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		&__article {
+			padding: 1px 25px;
+			font-size: 20px;
+			line-height: 27px;
+			background-color: rgba($color: #ffffff, $alpha: 0.5);
+			p {
+				margin-bottom: 27px;
+			}
+		}
+}
